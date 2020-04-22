@@ -4,6 +4,7 @@ import Timer from "./Timer";
 import Controls from "./Controls";
 
 export default class Countdown extends Component {
+  /* Can be replace with state = {} 
   constructor(props) {
     super(props);
     this.state = {
@@ -12,6 +13,11 @@ export default class Countdown extends Component {
     };
     // this.handleTogglePause = this.handleTogglePause.bind(this);
   }
+*/
+  state = {
+    duration: this.getRemainingTime(),
+    pause: false,
+  };
 
   componentDidMount() {
     this.resume();
