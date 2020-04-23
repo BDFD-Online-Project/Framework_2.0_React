@@ -1,4 +1,5 @@
 import React from "react";
+
 const Controls = ({ paused, onPauseToggle }) => (
   <div className="field is-grouped is-grouped-centered ">
     <p className="control">

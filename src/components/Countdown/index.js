@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import moment from "moment";
+
 import Timer from "./Timer";
 import Controls from "./Controls";
+import Datepicker from "./Datepicker";
 
 export default class Countdown extends Component {
   /* Can be replace with state = {} 
@@ -70,6 +72,7 @@ export default class Countdown extends Component {
             <div className="container">
               <h1 className="title">New Year Is Coming Up!</h1>
               <Timer duration={duration} />
+              <Datepicker />
               <Controls
                 paused={paused}
                 onPauseToggle={this.handleTogglePause}
